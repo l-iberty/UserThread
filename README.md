@@ -1,7 +1,7 @@
 # 构建用户级线程库
 模仿Windows的Fiber，实现了一套用户级线程函数库.用户线程的调度、context和栈的切换均使用汇编实现，整个过程唯一使用的系统API是`HeapAlloc/HeapFree`，将分配的堆内存用作用户线程的栈.
 
-[题目说明说明文档](./document.md)
+[题目说明文档](./document.md)
 
 ## 测试结果:
 ![](screenshot/test.png)
